@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenra's Rune Caster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fenra's Rune Caster</h1>
+        <form method="POST">
+            <input type="text" name="user_input" value="{{ user_input }}" placeholder="Type your spell..." autofocus>
+            <button type="submit">Summon Runes</button>
+        </form>
+        <div class="output">
+            <h2>{{ rune_output }}</h2>
+            <p>{{ flavor_text }}</p>
+        </div>
+        <div class="log">
+            <h3>Rune Chronicles</h3>
+            {% for entry in log_entries %}
+                <pre>{{ entry }}</pre>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
