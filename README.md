@@ -8,13 +8,8 @@ A mystical web app to transliterate text into Elder Futhark runes, inspired by F
 3. Run the app: `python app.py`
 4. Open `http://localhost:5000` in your browser.
 
-## Deploy to Render.com
-1. Fork this repo on GitHub.
-2. Create a new Web Service on Render.com.
-3. Set:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `gunicorn app:app`
-4. Deploy and access your live rune caster!
+## Render Website
+1. https://fenra-rune-webapp.onrender.com/
 
 ## Usage
 - Type text in the input box and click "Summon Runes" to see Elder Futhark runes with mythic flavor.
